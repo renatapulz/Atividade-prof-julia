@@ -6,8 +6,7 @@ function message() {
 
 message();
 
-// 2. Declare uma variável e atribua um número a ela, em seguida, exiba seu valor no console.
-// Atribua o valor a variável usando o window.prompt();
+// 2. Declare uma variável e atribua um número a ela, em seguida, exiba seu valor no console. Atribua o valor a variável usando o window.prompt();
 let numero;
 
 do {
@@ -20,8 +19,7 @@ do {
     }
 } while (isNaN(numero));
 
-// 3. Combine duas strings usando o operador de concatenação e exiba o resultado no console.
-//Utilize o template string ou a concatenação simples.
+// 3. Combine duas strings usando o operador de concatenação e exiba o resultado no console. Utilize o template string ou a concatenação simples.
 
 let textoA = "Meu nome é Renata Pulz";
 let textoB = "Estou fazendo a trilha FuturoDev.";
@@ -108,3 +106,19 @@ for (var i = 0; i < dados.length; i++) {
     console.log("Informações de " + dados[i].nome + ":");
     console.log(dados[i]);
 }
+
+// 7. Crie uma função que receba o valor de uma hora qualquer, e exibe no console uma mensagem de “bom dia”, “boa tarde” ou “boa noite”, de acordo com a hora passada.
+
+function validacaoSaudacao() {
+    var hora = parseInt(window.prompt("Digite uma hora qualquer: \nOBS.: Digitar um número entre 0 e 24"));
+    if (hora >= 6 && hora <= 12) {
+        console.log("Bom dia!!");
+    } else if (hora > 12 && hora <= 18) {
+        console.log("Boa tarde!!");
+    } else if (hora > 18 && hora <= 24 || hora >= 0 && hora < 6) {
+        console.log("Boa noite!!");
+    } else {
+        console.log("Valor inválido.");
+    }
+}
+validacaoSaudacao();
