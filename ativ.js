@@ -60,3 +60,33 @@ do {
     }
     
 } while (isNaN(valorDigitado));
+
+// 6. Crie 3 objetos com propriedades representando informações pessoais (nome, idade, nacionalidade e profissão) e exiba essas informações com um console.log para cada objeto.
+
+let infomacoesPessoaA = {};
+let infomacoesPessoaB = {};
+let infomacoesPessoaC = {};
+
+infomacoesPessoaA.nome = window.prompt("Vamos fazer uma pesquisa de dados. Por favor digite seu nome: ");
+infomacoesPessoaA.idade = window.prompt(infomacoesPessoaA.nome + ", quantos anos você tem? ");
+infomacoesPessoaA.nacionalidade = window.prompt("Qual sua nacionalidade? ");
+infomacoesPessoaA.profissao = window.prompt("Qual sua profissão?");
+
+infomacoesPessoaB.nome = window.prompt("Vamos aos dados de uma segunda pessoa. Por favor digite outro nome: ");
+infomacoesPessoaB.idade = window.prompt("Quantos anos " + infomacoesPessoaB.nome + " tem?");
+infomacoesPessoaB.nacionalidade = window.prompt("Qual a nacionalidade dele(a)? ");
+infomacoesPessoaB.profissao = window.prompt("E a profissão?");
+
+infomacoesPessoaC.nome = window.prompt("Falta pouquinho.. última pessoa! Digite um nome: ");
+infomacoesPessoaC.idade = window.prompt("Quantos anos " + infomacoesPessoaC.nome + " tem?");
+infomacoesPessoaC.nacionalidade = window.prompt("Qual a nacionalidade dele(a)? ");
+infomacoesPessoaC.profissao = window.prompt("E a profissão?");
+
+console.log("Informações de " + infomacoesPessoaA.nome + ":");
+console.log(infomacoesPessoaA);
+
+console.log("Informações de " + infomacoesPessoaB.nome + ":");
+console.log(infomacoesPessoaB);
+
+console.log("Informações de " + infomacoesPessoaC.nome + ":");
+console.log(infomacoesPessoaC);
