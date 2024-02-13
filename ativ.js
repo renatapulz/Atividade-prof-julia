@@ -25,5 +25,19 @@ do {
 
 let textoA = "Meu nome é Renata Pulz";
 let textoB = "Estou fazendo a trilha FuturoDev.";
-console.log(textoA + ". " + textoB);
-//ou: console.log(`${textoA}. ${textoB}`);
+console.log(textoA + ". " + textoB); //ou: console.log(`${textoA}. ${textoB}`);
+
+// 4. Crie uma função que receba dois números como parâmetros e retorne sua soma no console.log.
+
+function soma(a,b) {
+    let resultado;
+    a = parseFloat(window.prompt("Olá. Para realizar a soma, digite o primeiro valor:"));
+    b = parseFloat(window.prompt("Agora digite o segundo valor:"));
+    if(isNaN(a) || isNaN(b)) {
+        console.log("Os valores digitados não são válidos.")
+    } else {
+        resultado = a + b;
+        console.log(`A soma de ${a} + ${b} é igual a ${resultado}.`);
+    }
+}
+soma();
