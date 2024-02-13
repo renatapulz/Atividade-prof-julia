@@ -19,3 +19,11 @@ do {
         //ou: console.log(`O número digitado foi: ${numero}`);
     }
 } while (isNaN(numero));
+
+// 3. Combine duas strings usando o operador de concatenação e exiba o resultado no console.
+//Utilize o template string ou a concatenação simples.
+
+let textoA = "Meu nome é Renata Pulz";
+let textoB = "Estou fazendo a trilha FuturoDev.";
+console.log(textoA + ". " + textoB);
+//ou: console.log(`${textoA}. ${textoB}`);
