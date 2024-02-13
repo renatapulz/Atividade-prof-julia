@@ -58,7 +58,7 @@ do {
     } else {
         window.alert("Ops! Ocorreu um erro. Por favor, digite um número válido.");
     }
-    
+
 } while (isNaN(valorDigitado));
 
 // 6. Crie 3 objetos com propriedades representando informações pessoais (nome, idade, nacionalidade e profissão) e exiba essas informações com um console.log para cada objeto.
@@ -90,3 +90,21 @@ console.log(infomacoesPessoaB);
 
 console.log("Informações de " + infomacoesPessoaC.nome + ":");
 console.log(infomacoesPessoaC);
+
+// otimizando: 
+let dados = [];
+let quantPessoas = 3;
+window.alert("Iremos fazer uma pesquisa, para isso precisaremos de dados de " + quantPessoas + " pessoas próximas a você!")
+for (var i = 0; i < quantPessoas; i++) {
+    let infomacoesPessoa = {};
+
+    infomacoesPessoa.nome = window.prompt("Por favor digite um nome: ");
+    infomacoesPessoa.idade = window.prompt("Quantos anos " + infomacoesPessoa.nome + " tem?");
+    infomacoesPessoa.nacionalidade = window.prompt("Qual a nacionalidade dele(a)? ");
+    infomacoesPessoa.profissao = window.prompt("E a profissão?");
+    dados.push(infomacoesPessoa);
+}
+for (var i = 0; i < dados.length; i++) {
+    console.log("Informações de " + dados[i].nome + ":");
+    console.log(dados[i]);
+}
