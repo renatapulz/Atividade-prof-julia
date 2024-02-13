@@ -128,9 +128,56 @@ validacaoSaudacao();
 function validacaoNumero() {
     var numero = parseInt(window.prompt("Digite um número qualquer: "));
     if (!isNaN(numero)) {
-        numero % 2 === 0 ? console.log("O número " + numero + " é par!") :  console.log("O número " + numero + " é ímpar!");
+        numero % 2 === 0 ? console.log("O número " + numero + " é par!") : console.log("O número " + numero + " é ímpar!");
     } else {
         console.log("Valor inválido!");
     }
-} 
+}
 validacaoNumero();
+
+// 9. Use um switch para exibir mensagens diferentes com base em uma condição.
+
+function descobrePokemon() {
+    var nome = window.prompt("Digite o nome de um Pokémon para descobrir qual é o elemento principal dele.").toLowerCase();
+    switch (nome) {
+        case "bulbasaur":
+        case "venusaur":
+            console.log("Pokemon Grama.");
+            break;
+        case "charmander":
+        case "charizard":
+        case "charmeleon":
+        case "vulpix":
+            console.log("Pokemon Fogo.");
+            break;
+        case "squirtle":
+        case "blastoise":
+        case "wartotle":
+            console.log("Pokemon Água.");
+            break;
+        case "spearow":
+        case "pidgeot":
+        case "pidgey":
+            console.log("Pokemon Ar.");
+            break;
+        case "onix":
+        case "steelix":
+            console.log("Pokemon Pedra/Rocha.");
+            break;
+        case "meowth":
+        case "persian":
+            console.log("Pokemon Normal.");
+            break;
+        case "pichu":
+        case "pikachu":
+        case "raichu":
+            console.log("Pokemon Elétrico.");
+            break;
+        case "mewtwo":
+            console.log("Pokemon Psíquico.");
+            break;
+        default:
+            console.log("Pokemon desconhecido.");
+    }
+}
+descobrePokemon();
