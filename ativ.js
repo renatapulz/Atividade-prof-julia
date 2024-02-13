@@ -122,3 +122,15 @@ function validacaoSaudacao() {
     }
 }
 validacaoSaudacao();
+
+// 8. Implemente uma função que determine se um número é par ou ímpar.
+
+function validacaoNumero() {
+    var numero = parseInt(window.prompt("Digite um número qualquer: "));
+    if (!isNaN(numero)) {
+        numero % 2 === 0 ? console.log("O número " + numero + " é par!") :  console.log("O número " + numero + " é ímpar!");
+    } else {
+        console.log("Valor inválido!");
+    }
+} 
+validacaoNumero();
