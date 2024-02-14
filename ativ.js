@@ -181,3 +181,17 @@ function descobrePokemon() {
     }
 }
 descobrePokemon();
+
+// 10. Crie uma função que solicite para o usuário através do prompt de comando sua idade, e a partir da idade fornecida, exiba uma mensagem informando se ele é maior de idade ou não. Considere 18 anos como maior idade.
+
+function verificaIdade() {
+    var idade = parseInt(window.prompt("Digite sua idade, por favor:"));
+    if (idade >= 0 && idade < 18) {
+        window.alert("Você é menor de idade.");
+    } else if (idade >= 18 && idade < 105) {
+        window.alert("Você é maior de idade!");
+    } else {
+        window.alert("Verifique o valor digitado e tente novamente!");
+    }
+}
+verificaIdade();
