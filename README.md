@@ -1,3 +1,3 @@
 Lista 1 de exercícios relacionados a JS. 
-Trilha Futuro Dev no Floripa Mias Tec.
+Trilha Futuro Dev / Floripa Mais Tec.
 Prof: Júlia
